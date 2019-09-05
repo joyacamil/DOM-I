@@ -68,17 +68,25 @@ topHeader[0].textContent = siteContent['main-content']['features-h4'];
 
 topHeader[1].textContent = siteContent['main-content']['about-h4'];
 
-let topPs = document.querySelectorAll('.top-content .text-content p');
+let topContent = document.querySelectorAll('.top-content .text-content p');
 
-topPs[0].textContent = siteContent['main-content']['features-content'];
+topContent[0].textContent = siteContent['main-content']['features-content'];
 
-topPs[1].textContent = siteContent['main-content']['about-content'];
+topContent[1].textContent = siteContent['main-content']['about-content'];
 
-// let servicesHeader = document.querySelectorAll('.text-content h4');
-// servicesHeader[0].textContent = siteContent['main-content']['features-h4'];
+let bottomHeader = document.querySelectorAll('.bottom-content .text-content h4');
+bottomHeader[0].textContent = siteContent['main-content']['services-h4'];
 
-// let productHeader = document.querySelectorAll('.text-content h4');
-// productHeader[0].textContent = siteContent['main-content']['features-h4'];
+bottomHeader[1].textContent = siteContent['main-content']['product-h4'];
+
+bottomHeader[2].textContent = siteContent['main-content']['vision-h4'];
+
+let bottomContent = document.querySelectorAll('.bottom-content .text-content p');
+bottomContent[0].textContent = siteContent['main-content']['services-content'];
+
+bottomContent[1].textContent = siteContent['main-content']['product-content'];
+
+bottomContent[2].textContent = siteContent['main-content']['vision-content'];
 
 // let visionHeader = document.querySelectorAll('.text-content h4');
 // visionHeader[0].textContent = siteContent['main-content']['features-h4'];
