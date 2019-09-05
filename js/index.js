@@ -53,3 +53,12 @@ navItem[3].textContent = siteContent.nav["nav-item-4"];
 navItem[4].textContent = siteContent.nav["nav-item-5"];
 
 navItem[5].textContent = siteContent.nav["nav-item-6"];
+
+let ctaHeader = document.querySelector('h1');
+ctaHeader.textContent = siteContent.cta['h1'];
+
+let ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent.cta['button'];
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent.cta['img-src']);
