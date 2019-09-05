@@ -101,5 +101,5 @@ contactBody[1].textContent = siteContent['contact']['phone'];
 
 contactBody[2].textContent = siteContent['contact']['email'];
 
-// let featuresHeader = document.querySelectorAll('.text-content h4');
-// featuresHeader[0].textContent = siteContent['main-content']['features-h4'];
+let footerContent = document.querySelector('footer p');
+footerContent.textContent = siteContent['footer']['copyright'];
