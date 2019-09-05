@@ -91,10 +91,15 @@ bottomContent[1].textContent = siteContent['main-content']['product-content'];
 
 bottomContent[2].textContent = siteContent['main-content']['vision-content'];
 
+let contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
 
+let contactBody = document.querySelectorAll('.contact p');
+contactBody[0].textContent = siteContent['contact']['address'];
 
-// let featuresHeader = document.querySelectorAll('.text-content h4');
-// featuresHeader[0].textContent = siteContent['main-content']['features-h4'];
+contactBody[1].textContent = siteContent['contact']['phone'];
+
+contactBody[2].textContent = siteContent['contact']['email'];
 
 // let featuresHeader = document.querySelectorAll('.text-content h4');
 // featuresHeader[0].textContent = siteContent['main-content']['features-h4'];
