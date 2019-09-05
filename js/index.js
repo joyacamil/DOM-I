@@ -74,6 +74,9 @@ topContent[0].textContent = siteContent['main-content']['features-content'];
 
 topContent[1].textContent = siteContent['main-content']['about-content'];
 
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
 let bottomHeader = document.querySelectorAll('.bottom-content .text-content h4');
 bottomHeader[0].textContent = siteContent['main-content']['services-h4'];
 
@@ -88,8 +91,7 @@ bottomContent[1].textContent = siteContent['main-content']['product-content'];
 
 bottomContent[2].textContent = siteContent['main-content']['vision-content'];
 
-// let visionHeader = document.querySelectorAll('.text-content h4');
-// visionHeader[0].textContent = siteContent['main-content']['features-h4'];
+
 
 // let featuresHeader = document.querySelectorAll('.text-content h4');
 // featuresHeader[0].textContent = siteContent['main-content']['features-h4'];
