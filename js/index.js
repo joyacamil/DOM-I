@@ -41,7 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let navItem = document.querySelectorAll('header nav a');
+
+let navItem = document.querySelectorAll('nav a');
 navItem[0].textContent = siteContent.nav["nav-item-1"];
 
 navItem[1].textContent = siteContent.nav["nav-item-2"];
@@ -54,7 +55,24 @@ navItem[4].textContent = siteContent.nav["nav-item-5"];
 
 navItem[5].textContent = siteContent.nav["nav-item-6"];
 
-navItem.forEach(a => a.style.color = 'green')
+
+
+navItem.forEach(item => item.style.color = 'green')
+
+const nav = document.querySelector('nav');
+
+const firstAnchor = document.createElement('a');
+firstAnchor.textContent = 'Brands';
+nav.prepend(firstAnchor);
+firstAnchor.style.color = 'green';
+
+const lastAnchor = document.createElement('a');
+lastAnchor.textContent = 'Testimonials';
+nav.appendChild(lastAnchor);
+lastAnchor.style.color = 'green';
+
+
+
 
 let ctaHeader = document.querySelector('h1');
 ctaHeader.textContent = siteContent.cta['h1'];
